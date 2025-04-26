@@ -1,53 +1,92 @@
-body{
+body {
     background-color: black;
     text-align: center;
     margin-top: 35px;
+    position: relative;
 }
-.panel{
-    height: 200px;
-    width: 200px;
+
+.panel {
+    height: 30vw;
+    width: 30vw;
+    max-height: 200px;
+    max-width: 200px;
     display: inline-block;
     cursor: pointer;
 }
-.panel:hover{
+
+.panel:hover {
     box-shadow: inset 0px 0px 0px 3px cyan;
     box-sizing: border-box;
 }
-.top-right{
+
+.top-right {
     background-color: red;
-    border-top-right-radius: 200px;
+    border-top-right-radius: 50%;
 }
-.top-left{
+
+.top-left {
     background-color: yellow;
-    border-top-left-radius: 200px;
+    border-top-left-radius: 50%;
 }
-.bottom-right{
+
+.bottom-right {
     background-color: blue;
-    border-bottom-right-radius: 200px;
+    border-bottom-right-radius: 50%;
 }
-.bottom-left{
+
+.bottom-left {
     background-color: green;
-    border-bottom-left-radius: 200px;
+    border-bottom-left-radius: 50%;
 }
-.center{
+
+.center {
     background-color: black;
-    border-radius: 100%;
-    height: 200px;
-    width: 200px;
-    display: inline-block;
+    border-radius: 50%;
+    height: 20vw;
+    width: 20vw;
+    max-height: 150px;
+    max-width: 150px;
     position: absolute;
-    top: 137px;
-    left: 670px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.colo{
+
+.colo {
     background-color: white;
 }
-button{
-    font-size: 40px;
+
+button {
+    font-size: 5vw;
     margin-top: 50px;
     background-color: orange;
     border-radius: 20px;
-    height: 100px;
-    width: 200px;
-    cursor:pointer;
+    height: 15vw;
+    width: 40vw;
+    max-height: 100px;
+    max-width: 200px;
+    cursor: pointer;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+    body {
+        margin-top: 20px;
+    }
+
+    .panel {
+        height: 40vw;
+        width: 40vw;
+    }
+
+    .center {
+        height: 25vw;
+        width: 25vw;
+    }
+
+    button {
+        font-size: 6vw;
+        height: 15vw;
+        width: 50vw;
+    }
 }
