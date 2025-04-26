@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Say</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <div onclick="PanelClicked(event.currentTarget)" class="panel top-left"></div>
+        <div onclick="PanelClicked(event.currentTarget)" class="panel top-right"></div>
+    </div> 
+    <div> 
+        <div onclick="PanelClicked(event.currentTarget)" class="panel bottom-left"></div>
+        <div onclick="PanelClicked(event.currentTarget)" class="panel bottom-right"></div>
+    </div>
+    <div class="center"></div>
+    <script src="app.js"></script>
+    <button onclick="main()">Start</button>
+</body>
+</html>
